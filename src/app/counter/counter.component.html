@@ -1,0 +1,11 @@
+<p>counter works!</p>
+
+<div class="counter" style="background-color: aqua;">
+    <h2>Counter: {{ counter$ | async }}</h2>
+    <button (click)="increment()">Increment</button>
+    <button (click)="decrement()">Decrement</button>
+    <button (click)="reset()">Reset</button>
+    <input #valueInput type="number" placeholder="Enter a value" />
+    <button (click)="setValue(valueInput.value)">Set Value</button>
+  </div>
+  
